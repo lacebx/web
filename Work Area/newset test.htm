@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>www.akatsuki.rogue</title>
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="new2.css">
+</head>
+<script> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function checkPassword(form) { 
+                password1 = form.password1.value; 
+                password2 = form.password2.value; 
+  
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    alert("Password Match: Welcome to the Akatsuki!") 
+                    return true; 
+                } 
+            } 
+        </script> 
+<body>
+<div class="container" style="background-color:transparent;">
+  <form onSubmit = "return checkPassword(this)">
+  <div class="imgcontainer">
+  </div>
+
+  <div class="container" style="background-color:transparent;">
+  	<font color="red">
+
+                      <!-- Enter Affiliation -->    
+      <label for="affil"><b>Affiliation</b></label>
+      <input type="text" name="affil" required>
+                     
+                     <!-- Enter Username -->
+    <label for="uname"><b>Username</b></label>
+    <input type="text" name="uname" required>
+                     
+                     <!-- Enter Password. -->
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="password1" >
+
+                     
+                     <!-- To Confirm Password. -->    
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" name="password2">
+
+    <button type="submit">Submit</button>
+  </div>
+
+  <div class="container" style="background-color:transparent;">
+    <button type="button" class="cancelbtn">Cancel</button>
+     <button onclick rel="html" href="new.html">Test</button>
+  </div>
+</form>
+
+</body>
+</html>

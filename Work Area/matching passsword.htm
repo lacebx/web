@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <link rel="stylesheet" type="text/css" href="matching password.css">
+        <font color="red">
+            <font size="6">
+        <script> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function checkPassword(form) { 
+                password1 = form.password1.value; 
+                password2 = form.password2.value; 
+  
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    alert("Password Match: Welcome to the Akatsuki!") 
+                    return true; 
+                } 
+            } 
+        </script> 
+        <style> 
+            .gfg { 
+                font-size:40px; 
+                color:green; 
+                font-weight:bold; 
+                text-align:center; 
+            } 
+            .geeks { 
+                font-size:17px; 
+                text-align:center; 
+                margin-bottom:20px; 
+            } 
+        </style> 
+    </head> 
+    <body> 
+        <div class = "gfg">Akatsuki</div> 
+        <div class = "geeks">A computer science portal for geeks</div> 
+        <form onSubmit = "return checkPassword(this)"> 
+        <table border = 9 align = "left" style="background-color: transparent;">
+            <p>
+        <!-- Enter E-mail address -->
+            <div>E-mail:</div>
+            <div><input type="text" name= email size = 45></div> 
+        </p>
+            <p>
+                <!-- Enter username -->
+                <div>Initials:</div> 
+                <div><input type = text name = name size = 45></div> 
+            </p>
+            
+            <p> 
+                <!-- Enter Password. -->
+                <div>Password:</div> 
+                <div><input type = password name = password1 size = 45></div> 
+            </p> 
+            <p> 
+                <!-- To Confirm Password. -->
+                <div>Confirm Password:</div> 
+                <div><input type = password name = password2 size = 45></div> 
+            </p> 
+            <p> 
+                <div colspan = 2 align = right> 
+                <input type = submit value = "Submit"></div>
+            </p> 
+        </table> 
+        </form> 
+    </body> 
+</html>                     

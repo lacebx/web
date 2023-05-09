@@ -1,0 +1,52 @@
+body{
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+button{
+	background:white;
+	color:black;
+	border-radius: 20px;
+	font-size:17px;
+	align-items: center;
+	margin-top: 10px;
+	transition: ease-in 1s;
+	border:1px solid red;
+ 
+   font-style: italic;
+}
+.div1{
+
+	text-align: left;
+	margin-top: 1cm;
+	margin-left: 5%;
+	
+
+
+
+}
+button:hover{
+	cursor: pointer;
+	position: relative;
+	animation: roll 1s infinite;
+	font-size: 30px;
+	transition: ease-out 0.3s;
+	color:white;	
+	background:#3498db;
+	box-shadow: 30px 20px 38px blue;
+}
+@keyframes roll{
+	0%,100%{ 
+
+		transform: rotateZ(0deg);
+	}
+	25%{
+		transform: rotateZ(20deg);
+	}
+	50%{
+		transform: rotateZ(0deg);
+	}
+	75%{
+		transform: rotateZ(-20deg);
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "work-area",
+  "version": "0.17.98",
+  "description": "test",
+  "main": "Autocomplete.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "k"
+  ],
+  "author": "Lacebash",
+  "license": "ISC"
+}
